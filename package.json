@@ -1,0 +1,16 @@
+{
+  "name": "caodatadsa-vietnamtrip",
+  "version": "1.0.0",
+  "description": "Google Maps scraper for VietNamTrip DSA project",
+  "type": "module",
+  "scripts": {
+    "enrich": "node scraper.js --mode=enrich",
+    "discover": "node scraper.js --mode=discover",
+    "all": "node scraper.js --mode=all",
+    "merge": "node merger.js",
+    "validate": "node validator.js"
+  },
+  "dependencies": {
+    "playwright": "^1.65.1"
+  }
+}
